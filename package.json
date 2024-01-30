@@ -1,0 +1,23 @@
+{
+  "name": "farcastcaster",
+  "version": "1.0.0",
+  "description": "A micro-impl of a bot to cast jobstash jobs to our farcaster channel",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "send": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "build": "rm -rf dist && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@neynar/nodejs-sdk": "^1.8.0",
+    "@types/node": "^20.11.10",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "ts-node": "^10.9.2",
+    "viem": "^2.6.1"
+  }
+}
